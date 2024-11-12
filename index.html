@@ -1,26 +1,56 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mon Projet</title>
-        <link rel="stylesheet" href="/style.css">
 
-    </head>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Projet</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
 <body>
-    <h1>Bienvenue sur Mon Projet</h1>
-    <p>Voici les différents composants :</p>
-    <ul>
-        <li><a href="/navbar.html">Navbar</a></li>
-        <li><a href="/footer.html">Footer</a></li>
-        <li><a href="/authentification_form.html">Formulaire d'authentification</a></li>
-        <li><a href="/banner.html">Bannière</a></li>
-        <li><a href="/card.html">Carte</a></li>
-        <li><a href="/comments_section.html">Section Commentaires</a></li>
-        <li><a href="/resource_presentation.html">Présentation de Ressource</a></li>
-        <li><a href="/text_with_image.html">Texte avec Image</a></li>
-    </ul>
 
+    <h1>Swell & Bienvenue</h1>
+    <aside>
+        
+    </aside>
+    <p>Voici les différents composants :</p>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Colonne pour les boutons -->
+            <div class="col-md-6">
+                <ul>
+                    <li><a href="/card.html" class="btn">Carte</a></li>
+                    <li><a href="/footer.html" class="btn">Footer</a></li>
+                    <li><a href="/navbar.html" class="btn">Navbar</a></li>
+                    <li><a href="/banner.html" class="btn">Bannière</a></li>
+                    <li><a href="/text_with_image.html" class="btn">Texte avec Image</a></li>
+                    <li><a href="/comments_section.html" class="btn">Section Commentaires</a></li>
+                    <li><a href="/resource_presentation.html" class="btn">Présentation de Ressource</a></li>
+                    <li><a href="/authentification_form.html" class="btn">Formulaire d'authentification</a></li>
+                </ul>
+            </div>
+    
+            <!-- Colonne pour l'image -->
+            <div class="col-md-6">
+                <img src="image/logo.webp" alt="Description de l'image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    
+    <div class="small">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+
+    </div>
 </body>
+
 </html>
