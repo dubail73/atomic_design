@@ -203,7 +203,7 @@
 
 
 body {
-  margin-left: 20px;
+  
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
@@ -12805,16 +12805,51 @@ textarea.form-control-lg {
   color: #fff;
 }
 
+/* Stylisation pour les liens dans .col-md-6 */
 .col-md-6 a {
-  display: flex; 
+  display: flex;
   margin: 15px;
   justify-content: flex-start;
 }
 
+/* Stylisation pour l'image dans .col-md-6 */
 .col-md-6 img {
-  padding-top: 30px;
-  padding-left: 50px;
-  padding-bottom: 40px;
-  max-width: 80%; /* Par exemple, limite l'image à 80% de la largeur de la colonne */
-  height: auto;   /* Garde les proportions de l'image */
+  max-width: 100%; /* L'image s'adapte à la largeur de la colonne */
+  height: auto;    /* Maintient les proportions de l'image */
+  display: block;  /* Centre l'image dans son conteneur */
+  margin: 0 auto;
 }
+
+/* Limite l'image sur les grands écrans */
+@media (min-width: 1200px) {
+  .col-md-6 img {
+    max-width: 30%; /* Réduit le logo à 30% de la colonne sur les écrans larges */
+  }
+}
+
+/* Limite l'image sur les écrans moyens et petits */
+@media (max-width: 768px) {
+  .col-md-6 img {
+    max-width: 60%; /* Réduit le logo à 60% de la colonne sur les petits écrans */
+  }
+}
+
+.bg-image {
+  background-image: url("image/dune.png"); /* Remplace par le chemin de ton image */
+  background-size: cover; /* Pour que l'image couvre toute la div */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat;     /* Pas de répétition */
+  min-height: 300px;                /* Hauteur minimale pour voir l'image */
+  width: 100vw;                     /* Largeur de 100% de la fenêtre */
+  margin: 0;
+}
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+

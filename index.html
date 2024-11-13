@@ -6,51 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Projet</title>
     <link rel="stylesheet" href="/style.css">
-
 </head>
 
 <body>
 
     <h1>Swell & Bienvenue</h1>
-    <aside>
-        
-    </aside>
+    <aside></aside>
     <p>Voici les différents composants :</p>
-    <div class="container-fluid">
+
+
+    <div class="container mt-4">
         <div class="row">
-            <!-- Colonne pour les boutons -->
-            <div class="col-md-6">
+
+            <div class="col-12 col-md-6">
                 <ul>
-                    <li><a href="/card.html" class="btn">Carte</a></li>
-                    <li><a href="/footer.html" class="btn">Footer</a></li>
-                    <li><a href="/navbar.html" class="btn">Navbar</a></li>
-                    <li><a href="/banner.html" class="btn">Bannière</a></li>
-                    <li><a href="/text_with_image.html" class="btn">Texte avec Image</a></li>
-                    <li><a href="/comments_section.html" class="btn">Section Commentaires</a></li>
-                    <li><a href="/resource_presentation.html" class="btn">Présentation de Ressource</a></li>
-                    <li><a href="/authentification_form.html" class="btn">Formulaire d'authentification</a></li>
+                    <li><a href="/card.html" class="btn btn-primary">Carte</a></li>
+                    <li><a href="/footer.html" class="btn btn-primary">Footer</a></li>
+                    <li><a href="/navbar.html" class="btn btn-primary">Navbar</a></li>
+                    <li><a href="/banner.html" class="btn btn-primary">Bannière</a></li>
+                    <li><a href="/comments_section.html" class="btn btn-primary">Section Commentaires</a></li>
+                    <li><a href="/resource_presentation.html" class="btn btn-primary">Présentation de Ressource</a></li>
+                    <li><a href="/authentification_form.html" class="btn btn-primary">Formulaire d'authentification</a>
+                    </li>
                 </ul>
             </div>
-    
-            <!-- Colonne pour l'image -->
-            <div class="col-md-6">
+
+            <div class="col-12 col-md-6">
                 <img src="image/logo.webp" alt="Description de l'image" class="img-fluid">
             </div>
         </div>
     </div>
-    
-    <div class="small">
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-info">Info</button>
-        <button type="button" class="btn btn-warning">Warning</button>
-        <button type="button" class="btn btn-danger">Danger</button>
-        <button type="button" class="btn btn-light">Light</button>
-        <button type="button" class="btn btn-dark">Dark</button>
-        <button type="button" class="btn btn-link">Link</button>
 
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h2>Emphasis classes</h2>
+                <p class="text-primary">.text-primary</p>
+                <p class="text-primary-emphasis">.text-primary-emphasis</p>
+                <p class="text-secondary">.text-secondary</p>
+                <p class="text-secondary-emphasis">.text-secondary-emphasis</p>
+                <p class="text-success">.text-success</p>
+                <p class="text-success-emphasis">.text-success-emphasis</p>
+                <p class="text-danger">.text-danger</p>
+                <p class="text-danger-emphasis">.text-danger-emphasis</p>
+                <p class="text-warning">.text-warning</p>
+                <p class="text-warning-emphasis">.text-warning-emphasis</p>
+                <p class="text-info">.text-info</p>
+                <p class="text-info-emphasis">.text-info-emphasis</p>
+                <p class="text-light">.text-light</p>
+                <p class="text-light-emphasis">.text-light-emphasis</p>
+                <p class="text-dark">.text-dark</p>
+                <p class="text-dark-emphasis">.text-dark-emphasis</p>
+                <p class="text-body">.text-body</p>
+                <p class="text-body-emphasis">.text-body-emphasis</p>
+                <p class="text-body-secondary">.text-body-secondary</p>
+                <p class="text-body-tertiary">.text-body-tertiary</p>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <h1 class="text-end">Heading 1</h1>
+                <h2 class="text-end">Heading 2</h2>
+                <h3 class="text-end">Heading 3</h3>
+                <h4 class="text-end">Heading 4</h4>
+                <h5 class="text-end">Heading 5</h5>
+                <h6 class="text-end">Heading 6</h6>
+                <h3 class="text-end">
+                    Heading
+                    <small class="text-body-secondary">with faded secondary text</small>
+                </h3>
+                <p class="lead text-end">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            </div>
+        </div>
     </div>
+
+    <div class="container mt-4">
+        <div class="small">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-link">Link</button>
+        </div>
+    </div>
+
 </body>
 
 </html>
